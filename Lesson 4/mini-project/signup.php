@@ -30,13 +30,8 @@ if (isset($_POST['signup'])) {
     $email =  $_POST['email'];
     $password = $_POST['password'];
 
-    //Create a connection to the database
-   $database_connection = new mysqli("localhost", "root", "", "kcb");
-   if ($database_connection->connect_error) {
-    echo $database_connection->error;
-   }else{
-    echo "Database connection successfull.";
-   }
+    //connect to the database
+    include_once 'db-connect.php';
 
     // Inser the values
     $sql = "INSERT INTO users(username, email, password) VALUES('$username', '$email', '$password')";

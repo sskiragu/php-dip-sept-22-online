@@ -14,3 +14,5 @@
 # include & require -
 # Forms [contactus, login, register] -
 # Mysql [CRUD] -
+# procedural - use of function[assignment out 15]
+# OOP - use classes[cat out 15]
