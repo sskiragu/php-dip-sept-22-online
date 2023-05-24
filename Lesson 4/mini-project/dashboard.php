@@ -44,7 +44,7 @@ if (isset($_GET['id'])) {
             echo "You selected reports";
             break;
         case 'logout':
-            echo "You selected logout";
+            include_once "logout.php";
             break;
         
         default:
