@@ -16,3 +16,4 @@
 # Mysql [CRUD] -INSERT, SELECT, UPDATE, DELETE
 # procedural - use of function[assignment out 15]
 # OOP - use classes[cat out 15]
+# Sessions/Tokens

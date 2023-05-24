@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -18,7 +19,8 @@
         <?php
           //connect to the database
           include_once 'db-connect.php';
-          $sql = "SELECT * FROM users WHERE username='peter'";
+          $logged_in_user = $_SESSION['username'];
+          $sql = "SELECT * FROM users WHERE username='$logged_in_user'";
           $result = $database_connection->query($sql);
           $row = $result->fetch_assoc();
         ?>

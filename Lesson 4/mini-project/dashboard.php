@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +15,7 @@
 <body>
     <nav>
         <div class="dashboard">
+            <?php echo "Welcome ".$_SESSION['username'];?>
             <ul>
                 <li><a href="dashboard.php?id=profile">Profile</a></li>
                 <li><a href="dashboard.php?id=statements">View Statements</a></li>

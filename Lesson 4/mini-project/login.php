@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,6 +44,7 @@ if (isset($_POST['login'])) {
    $result = $database_connection->query($sql);
 //    var_dump($result);
    if ($result->num_rows > 0) {
+    $_SESSION['username'] = $username;
     header("Location: dashboard.php");
    }else{
     echo "User not available";
