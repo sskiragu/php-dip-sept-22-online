@@ -13,6 +13,6 @@
 # array [index, associative] -done
 # include & require -
 # Forms [contactus, login, register] -
-# Mysql [CRUD] -
+# Mysql [CRUD] -INSERT, SELECT, UPDATE, DELETE
 # procedural - use of function[assignment out 15]
 # OOP - use classes[cat out 15]

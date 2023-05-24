@@ -18,7 +18,7 @@
         <?php
           //connect to the database
           include_once 'db-connect.php';
-          $sql = "SELECT * FROM users WHERE username='john'";
+          $sql = "SELECT * FROM users WHERE username='peter'";
           $result = $database_connection->query($sql);
           $row = $result->fetch_assoc();
         ?>
